@@ -44,11 +44,15 @@ pipeline {
                         ])
                     } else {
                         echo "Checking out branch: ${params.VERSION}"
-                        checkout([
-                            $class: 'GitSCM',
-                            branches: [[name: "*/${params.VERSION}"]],
-                            userRemoteConfigs: [[url: 'https://github.com/username/app.git']]
-                        ])
+                       checkout([
+  $class: 'GitSCM',
+  branches: [[name: "main"]],
+  userRemoteConfigs: [[
+      url: 'https://github.com/Sejal302002/slip8.git',
+      credentialsId: 'token1'
+  ]]
+])
+
                     }
                 }
                 
