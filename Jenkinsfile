@@ -3,7 +3,7 @@ pipeline {
     agent any
 
     tools {
-        nodejs "Node18"
+        nodejs "node18"
     }
 
     parameters {
@@ -50,3 +50,4 @@ pipeline {
     }
 
 }
+
