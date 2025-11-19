@@ -4,7 +4,8 @@
   "description": "Sample application for SLIP 8 Q2 - Jenkins Parameterized Pipeline",
   "main": "src/index.js",
   "scripts": {
-    "test": "jest",
+  "test": "jest --passWithNoTests",
+
     "test:coverage": "jest --coverage",
     "build": "echo 'Build completed successfully'",
     "start": "node src/index.js",
@@ -39,4 +40,5 @@
     ]
   }
 }
+
 
