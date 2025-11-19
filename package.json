@@ -1,0 +1,42 @@
+{
+  "name": "parameterized-pipeline-app",
+  "version": "1.0.0",
+  "description": "Sample application for SLIP 8 Q2 - Jenkins Parameterized Pipeline",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "build": "echo 'Build completed successfully'",
+    "start": "node src/index.js",
+    "deploy:dev": "echo 'Deploying to development environment...'",
+    "deploy:staging": "echo 'Deploying to staging environment...'",
+    "deploy:prod": "echo 'Deploying to production environment...'"
+  },
+  "keywords": [
+    "jenkins",
+    "parameterized",
+    "pipeline",
+    "conditional",
+    "devops"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^6.3.3"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coverageDirectory": "coverage",
+    "collectCoverageFrom": [
+      "src/**/*.js"
+    ],
+    "testMatch": [
+      "**/__tests__/**/*.test.js"
+    ]
+  }
+}
+
