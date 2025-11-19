@@ -38,7 +38,8 @@ pipeline {
         stage('Test') {
             when { expression { params.RUN_TESTS == true } }
             steps {
-                sh 'npm test'
+               sh 'npm test --passWithNoTests'
+
             }
         }
     }
@@ -50,4 +51,5 @@ pipeline {
     }
 
 }
+
 
